@@ -13,7 +13,7 @@ elif [ $isPartTime -eq $checkRandom ]
  then
    {
 	echo "part time employee present";
-	empHour=2;
+	empHour=3;
 	
    } 
 else
