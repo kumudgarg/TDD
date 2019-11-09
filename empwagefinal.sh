@@ -1,13 +1,13 @@
 #!/bin/bash -x
 isFullTime=1;
 isPartTime=2;
-checkRandom=$(( RANDOM%3 ));
-if [ $isFullTime -eq $checkRandom ]
+employeeCheck=$(( RANDOM%3 ));
+if [ $isFullTime -eq $employeeCheck ]
  then
    {
         echo "employe is present";
    }
-elif [ $isPartTime -eq $checkRandom ]
+elif [ $isPartTime -eq $employeeCheck ]
  then
    {
         echo "part time employee present";
