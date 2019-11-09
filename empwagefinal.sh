@@ -1,8 +1,8 @@
 #!/bin/bash -x
 isFullTime=1;
 isPartTime=2;
-employee2=$(( RANDOM%3 ));
-if [ $isFullTime -eq $employee2 ]
+employee1=$(( RANDOM%3 ));
+if [ $isFullTime -eq $employee1 ]
  then
    {
         echo "employe is present";
