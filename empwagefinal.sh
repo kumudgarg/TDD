@@ -1,6 +1,6 @@
 #!/bin/bash -x
 isFullTime=1;
-isPartTime=2;
+isPartTime=3;
 checkRandom=$(( RANDOM%3 ));
 empRatePerHour=10;
 if [ $isFullTime -eq $checkRandom ]
