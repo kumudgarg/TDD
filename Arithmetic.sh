@@ -1,5 +1,7 @@
 #!/bin/bash -x
+declare -A Tests
 read -p  "enter the value for a" a
 read -p  "enter the value for b" b
 read -p  "enter the value for c" c
-echo $a $b $c
+Test[test1]=$(( ($a + $b) * $c ))
+echo ${Test[test1]}
