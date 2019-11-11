@@ -1,5 +1,5 @@
 #!/bin/bash -x
-declare -A Tests
+declare -A Test
 read -p  "enter the value for a" a
 read -p  "enter the value for b" b
 read -p  "enter the value for c" c
