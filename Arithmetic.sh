@@ -21,3 +21,18 @@ do
  fi
  done
 echo ${Cases[@]}
+echo "element in accending order are :"
+for (( i = 0;  i <=4; i++ ))
+do
+ {
+  echo ${Test[$i]}
+ }
+done
+echo "element in deccending order are :"
+for (( i = 4;  i > 0; i-- ))
+do
+ {
+  echo ${Test[$i]}
+ }
+done
+
