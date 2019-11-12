@@ -22,12 +22,22 @@ do
  done
 echo ${Cases[@]}
 echo "element in accending order are :"
-for (( i = 0;  i <=4; i++ ))
+for (( i = 0;  i < 4; i++ ))
 do
- {
-  echo ${Test[$i]}
- }
+  for (( j=i; j < 4-i-1; i++ ))
+  do
+    echo $j
+    echo ${Cases[$((j+1))]}
+   if [ ${Cases[j]} -gt ${Cases[$((j+1))]} ]
+   then
+       temp=${Cases[$j]}
+       Cases[$j]=${Cases[$((j+1))]}
+       Cases[$((j+1))]=$temp
+   fi
+  done
 done
+echo ${Test[*]}
+
 echo "element in deccending order are :"
 for (( i = 4;  i > 0; i-- ))
 do
